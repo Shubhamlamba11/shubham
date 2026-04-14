@@ -11,7 +11,14 @@ declare module 'gsap-trial/SplitText' {
 declare module 'gsap-trial/ScrollSmoother' {
   export class ScrollSmoother {
     static create(vars: any): ScrollSmoother;
-    paused(value: boolean): void;
+    static refresh(value?: boolean): void;
+    static get(): ScrollSmoother;
+    paused(value?: boolean | any): any;
+    scrollTo(target: any, isPrecise?: boolean, position?: string): void;
+    scrollTop(value?: number): any;
+    getVelocity(): number;
+    kill(): void;
   }
 }
+
 
