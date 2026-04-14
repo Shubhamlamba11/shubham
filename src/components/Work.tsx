@@ -58,13 +58,13 @@ const Work = () => {
               name: "Voice Assistant (Jarvis)",
               category: "AI / Automation",
               tools: "Python, Gemini API, NLP",
-              image: "/images/jarvis_project_final.png",
+              image: "images/jarvis_project_final.png",
             },
             {
               name: "Dynamic Travel Website",
               category: "Full Stack Web Application",
               tools: "HTML, CSS, Java, Python, MySQL",
-              image: "/images/travel_project_final.png",
+              image: "images/travel_project_final.png",
             },
           ].map((project, index) => (
             <div className="work-box" key={index}>
