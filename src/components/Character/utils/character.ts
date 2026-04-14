@@ -30,6 +30,7 @@ const setCharacter = (
             await renderer.compileAsync(character, camera, scene);
             character.traverse((child: any) => {
               if (child.isMesh) {
+                console.log("Mesh found:", child.name);
                 const mesh = child as THREE.Mesh;
                 child.castShadow = true;
                 child.receiveShadow = true;
