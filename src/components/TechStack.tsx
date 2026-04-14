@@ -17,11 +17,15 @@ const imageUrls = [
   "images/java.png",
   "images/python.png",
   "images/javascript.webp",
-  "images/typescript.webp",
-  "images/react2.webp",
-  "images/node2.webp",
-  "images/mysql.webp",
-  "images/mongo.webp",
+  "./images/gemini.png",
+  "./images/java.png",
+  "./images/python.png",
+  "./images/javascript.webp",
+  "./images/typescript.webp",
+  "./images/react2.webp",
+  "./images/node2.webp",
+  "./images/mysql.webp",
+  "./images/mongo.webp",
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
@@ -200,7 +204,7 @@ const TechStack = () => {
           ))}
         </Physics>
         <Environment
-          files="/models/char_enviorment.hdr"
+          files="models/char_enviorment.hdr"
           environmentIntensity={0.5}
           environmentRotation={[0, 4, 2]}
         />
